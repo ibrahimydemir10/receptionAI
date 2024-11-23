@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gamze's Otel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gamze's Otel</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Ana Sayfa</a>
+            <a href="{{ url_for('yapayzeka') }}">Otelin Yapay Zekası</a>
+            <a href="{{ url_for('rooms') }}">Odalar</a>
+            <a href="{{ url_for('about') }}">Hakkında</a>
+            <a href="{{ url_for('contact') }}">İletişim</a>
+        </nav>
+    </header>
+
+    <div class="slider_area">
+        <img src="{{ url_for('static', filename='images/background.jpg') }}" alt="Otel Arkaplanı">
+        <div class="slider_content">
+            <h1>Otelimize Hoş Geldiniz</h1>
+            <p>En iyi tatil deneyimini yaşayın.</p>
+        </div>
+    </div>
+
+    <!-- Sağ Alt Köşe İçin Kullandığınız Kod -->
+    <div class="bottom-right-widget">
+        <!-- Buraya vereceğiniz kodu ekleyin -->
+        <p><script type="text/javascript">
+            (function(d, t) {
+                var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                v.onload = function() {
+                  window.voiceflow.chat.load({
+                    verify: { projectID: '673e022e51ae758e43b8d56c' },
+                    url: 'https://general-runtime.voiceflow.com',
+                    versionID: 'production'
+                  });
+                }
+                v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+            })(document, 'script');
+          </script>
+        </p>
+    </div>
+</body>
+</html>

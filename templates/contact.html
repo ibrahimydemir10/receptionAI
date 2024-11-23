@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim - Gamze's Otel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gamze's Otel</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Ana Sayfa</a>
+            <a href="{{ url_for('rooms') }}">Odalar</a>
+            <a href="{{ url_for('about') }}">Hakkında</a>
+            <a href="{{ url_for('contact') }}">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>İletişim</h2>
+        <p>Adres: Gamze's Otel, Tatil Kasabası, Türkiye</p>
+        <p>Telefon: +90 123 456 7890</p>
+        <p>Email: info@gamzesotel.com</p>
+    </main>
+</body>
+</html>

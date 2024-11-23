@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odalar - Gamze's Otel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gamze's Otel</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Ana Sayfa</a>
+            <a href="{{ url_for('rooms') }}">Odalar</a>
+            <a href="{{ url_for('about') }}">Hakkında</a>
+            <a href="{{ url_for('contact') }}">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Odalarımız</h2>
+        <div class="room">
+            <h3>Standart Oda</h3>
+            <p>Rahat ve ekonomik konaklama imkanı.</p>
+            <p>Fiyat: 3000 TL / Gece</p>
+        </div>
+        <div class="room">
+            <h3>Lüks Oda</h3>
+            <p>Daha geniş alan ve ekstra konfor.</p>
+            <p>Fiyat: 5000 TL / Gece</p>
+        </div>
+        <div class="room">
+            <h3>Suit Oda</h3>
+            <p>En lüks konaklama deneyimi.</p>
+            <p>Fiyat: 10000 TL / Gece</p>
+        </div>
+    </main>
+</body>
+</html>

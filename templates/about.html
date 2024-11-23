@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hakkında - Gamze's Otel</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Gamze's Otel</h1>
+        <nav>
+            <a href="{{ url_for('home') }}">Ana Sayfa</a>
+            <a href="{{ url_for('rooms') }}">Odalar</a>
+            <a href="{{ url_for('about') }}">Hakkında</a>
+            <a href="{{ url_for('contact') }}">İletişim</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Gamze's Otel Hakkında</h2>
+        <p>Gamze's Otel, konuklarına rahatlık ve huzur sunmak amacıyla modern bir tasarımla kurulmuştur.</p>
+        <p>Yüksek kalite standartlarına sahip odalarımız ve hizmetlerimizle unutulmaz bir tatil yaşamanız için sizleri bekliyoruz.</p>
+    </main>
+</body>
+</html>
